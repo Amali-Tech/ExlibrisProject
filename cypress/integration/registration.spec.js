@@ -56,10 +56,6 @@ describe('Registraion Functionality', () => {
         cy.contains('Bitte geben Sie eine Postleitzahl ein.')
         //place
         cy.contains('Bitte wählen Sie einen Ort aus.')
-     
-        
-
-  
 
     })
 
@@ -75,8 +71,7 @@ describe('Registraion Functionality', () => {
         cy.get('#login-1 > .font-1').click()
 
         //email field
-        cy.get('#email-1').click().type('manafsulleyman@gmail.com')
-        //cy.get('#email-1').click().type('man@gmail.com')
+        cy.get('#email-1').click().type('manaf22sulleyman@gmail.com')
 
         //Title field
         cy.get('#address_title')
@@ -118,7 +113,7 @@ describe('Registraion Functionality', () => {
         //Submit button
         //cy.get('.button-2 save-user').click()
         cy.get(':nth-child(7) > .last-1 > .button-2').click().wait(10000)
-        
+
         //email
         // cy.contains('Willkommen Herr Abdul Manaf, schön sind Sie da!')
 
@@ -178,7 +173,7 @@ describe('Registraion Functionality', () => {
         //Submit button
         //cy.get('.button-2 save-user').click()
         cy.get(':nth-child(7) > .last-1 > .button-2').click().wait(10000)
-        
+
         //Validation error for email
         //cy.get('#accountEntry\.emailAddress\.errors').contains('Bitte geben Sie eine E-Mail-Adresse an.')
 
@@ -236,7 +231,7 @@ describe('Registraion Functionality', () => {
 
         //Submit button
         cy.get(':nth-child(7) > .last-1 > .button-2').click().wait(10000)
-        
+
 
         //Password
         cy.contains('Bitte bestätigen Sie das Passwort nochmals.')
@@ -298,11 +293,11 @@ describe('Registraion Functionality', () => {
         //Submit button
         //cy.get('.button-2 save-user').click()
         cy.get(':nth-child(7) > .last-1 > .button-2').click().wait(10000)
-        
+
         //Should contain validation error 
 
         //email
-        cy.contains('Bitte geben Sie eine gültige E-Mail-Adresse an.') 
+        cy.contains('Bitte geben Sie eine gültige E-Mail-Adresse an.')
         //Password
         cy.contains('Das Passwort muss mindestens 6 Zeichen lang sein.')
         //firstname
@@ -381,7 +376,7 @@ describe('Registraion Functionality', () => {
         //Submit button
         //cy.get('.button-2 save-user').click()
         cy.get(':nth-child(7) > .last-1 > .button-2').click().wait(10000)
-        
+
         //Expected Validation 
         cy.contains('Die Landesvorwahl ist ungültig.')
 
@@ -448,7 +443,7 @@ describe('Registraion Functionality', () => {
 
         //Submit button
         cy.get('.button-2 save-user').click()
- 
+
 
     })
 })
